@@ -29,7 +29,7 @@ pipeline{
               stage('build'){
 		      steps {
 			      script{
-                sh 'docker build . -t deekshithsn/devops-training:$Docker_tag'
+                sh 'docker build . -t HarishAddala6/sample-web-application:$Docker_tag'
          
                 
 			      }
