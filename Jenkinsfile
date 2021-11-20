@@ -12,7 +12,7 @@ pipeline{
               stage('Quality Gate Status Check'){
                   steps{
                       script{
-			      withSonarQubeEnv('sonar server') {
+			     withSonarQubeEnv('sonar server') {
 		    	    sh "mvn sonar:sonar"
 		      }
                  	}
