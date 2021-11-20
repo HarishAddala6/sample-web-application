@@ -16,7 +16,7 @@ pipeline{
         
         stages{
 
-              stage('Quality Gate Status Check'){
+              stage('maven install'){
                   steps{
                       script{
 			  
