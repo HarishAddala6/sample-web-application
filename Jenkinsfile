@@ -12,6 +12,14 @@ pipeline{
               stage('Quality Gate Status Check'){
                   steps{
                       script{
+		    	    sh "mvn sonar:sonar"
+                 	}
+
+               	 }  
+              }	
+	      stage('Clean Install'){
+                  steps{
+                      script{
 		    	    sh "mvn clean install"
                  	}
 
